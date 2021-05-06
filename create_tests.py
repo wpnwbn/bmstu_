@@ -36,14 +36,6 @@ SCRIPT - file which will run "*_in.txt" tests on your MAIN program and write the
     into "*_out.txt" files and after that - copy them to OUTFILE.
 
 MAIN - name of your executable program.
-
-===== HOW TO RUN =====
-$ python create_tests.py
-$ chmod +x *.sh
-$ ./{GEN}          # Substitute here name of GEN file
-$ ./{SCRIPT}       # Substitute here name of SCRIPT file
-
-Open {OUTFILE} with any text editor.
 """
 
 with open(INFILE, "r") as infile, open(GEN, "w") as gen, open(SCRIPT, "w") as script:
